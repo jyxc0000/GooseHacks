@@ -1,0 +1,5 @@
+Temperature: 22.9 °C
+Humidex: 24
+Sea Level Pressure: 102.1 kPa / falling
+Dew Point: 9.4 °C
+Relative Humidity: 42%
