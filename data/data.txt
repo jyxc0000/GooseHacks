@@ -27,3 +27,28 @@ data/Thompson Okanagon overall: 7
 Pemberton.txt: 3
 data/Vancouver Coast & Mountains overall: 3
 ---------------------
+Airdrie.txt: 5
+Calgary.txt: 5
+Edmonton.txt: 3
+data/Alberta overall: 5
+---------------------
+Brandon.txt: 5
+Winkler.txt: 5
+Winnipeg.txt: 3
+data/Manitoba overall: 5
+---------------------
+Fredericton.txt: 3
+Moncton.txt: 3
+Saint John.txt: 3
+data/New Brunswick overall: 3
+---------------------
+Halifax.txt: 3
+Kentville.txt: 3
+Yarmouth.txt: 3
+data/Nova Scotia overall: 3
+---------------------
+Ottowa.txt: 3
+Toronto.txt: 3
+Windsor.txt: 3
+data/Ontario overall: 3
+---------------------
