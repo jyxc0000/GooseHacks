@@ -1,5 +1,3 @@
-Temperature: 14.3 °C
-Sea Level Pressure: 102.5 kPa / rising
-Wind: WSW 19 km/h
-Dew Point: 7.9 °C
-Relative Humidity: 65%
+14.3 
+19
+65
