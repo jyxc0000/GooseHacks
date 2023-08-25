@@ -61,6 +61,16 @@ var cityLocations = [
     [-75.6972, 45.4215, 'Ottawa', 'The overall forestfire index here is 3, there is a low forest fire risk.', 'yellow'],
     [-79.3832, 43.6532, 'Toronto', 'The overall forestfire index here is 3, there is a low forest fire risk.', 'yellow'],
     [-83.0364, 42.3149, 'Windsor', 'The overall forestfire index here is 3, there is a low forest fire risk.', 'yellow'],
+    [-74.3692, 49.9132, 'Chibougamau', 'The overall forestfire index here is 3, there is a low forest fire risk.', 'yellow'],
+    [-71.2075, 46.8131, 'Quebec City', 'The overall forestfire index here is 3, there is a low forest fire risk.', 'yellow'],
+    [-68.6916667, 51.3972222, 'Rene-Levasseur Island', 'The overall forestfire index here is 3, there is a low forest fire risk.', 'yellow'],
+    [-71.0600, 48.4276, 'Saguenay', 'The overall forestfire index here is 3, there is a low forest fire risk.', 'yellow'],
+    [-66.3758, 50.2133, 'Sept-iles', 'The overall forestfire index here is 3, there is a low forest fire risk.', 'yellow'],
+    [-69.9374, 58.6974, 'Tasiujaq', 'The overall forestfire index here is 5, there is a moderate forest fire risk.', 'orange'],
+    [-76.5471, 56.5516, 'Umiujaq', 'The overall forestfire index here is 5, there is a moderate forest fire risk.', 'orange'],
+    [-105.1229, 52.2020, 'Humboldt', 'The overall forestfire index here is 3, there is a low forest fire risk.', 'yellow'],
+    [-108.4280, 54.1317, 'Meadow Lake', 'The overall forestfire index here is 3, there is a low forest fire risk.', 'yellow'],
+    [-106.6702, 52.1579, 'Saskatoon', 'The overall forestfire index here is 3, there is a low forest fire risk.', 'yellow'],
 
 ];
 
