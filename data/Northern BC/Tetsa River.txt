@@ -1,5 +1,3 @@
-Temperature: 27.4 °C
-Wind: N 4 km/h
-Dew Point: 7.2 °C
-Relative Humidity: 28%
-Visibility: 16.1 km
+27.4 
+4 
+28

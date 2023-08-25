@@ -1,7 +1,3 @@
-Temperature: 25.1 °C
-Humidex: 26
-Sea Level Pressure: 101.9 kPa / falling
-Wind: NNE 19 km/h gust 29 km/h
-Dew Point: 8.8 °C
-Relative Humidity: 36%
-Visibility: 19.3 km
+25.1
+29
+29

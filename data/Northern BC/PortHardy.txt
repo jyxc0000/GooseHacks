@@ -1,6 +1,3 @@
-Temperature: 18.9 °C
-Sea Level Pressure: 101.9 kPa / falling
-Wind: N 15 km/h
-Dew Point: 13.0 °C
-Relative Humidity: 69%
-Visibility: 32.2 km
+18.9 
+15 
+69
