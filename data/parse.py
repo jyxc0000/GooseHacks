@@ -50,5 +50,7 @@ run("data/Manitoba")
 run("data/New Brunswick")
 run("data/Nova Scotia")
 run("data/Ontario")
+run("data/Quebec")
+run("data/Saskatchewan")
 f.close()
 

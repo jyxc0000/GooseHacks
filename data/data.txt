@@ -30,9 +30,13 @@ data/Vancouver Coast & Mountains overall: 3
 Airdrie.txt: 5
 Calgary.txt: 5
 Edmonton.txt: 3
+Fort McMurray.txt: 3
+Grande Praire.txt: 3
 data/Alberta overall: 5
 ---------------------
 Brandon.txt: 5
+Churchill.txt: 3
+The Pas.txt: 1
 Winkler.txt: 5
 Winnipeg.txt: 3
 data/Manitoba overall: 5
@@ -51,4 +55,12 @@ Ottowa.txt: 3
 Toronto.txt: 3
 Windsor.txt: 3
 data/Ontario overall: 3
+---------------------
+Quebec City.txt: 3
+data/Quebec overall: 3
+---------------------
+Humboldt.txt: 3
+Meadow Lake.txt: 3
+Saskatoon.txt: 3
+data/Saskatchewan overall: 3
 ---------------------
