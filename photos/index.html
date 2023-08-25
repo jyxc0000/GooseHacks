@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dated Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Log Your Observations</h1>
+    <input type="file" id="photoInput">
+    <input type="text" id="captionInput" placeholder="Enter caption">
+    <button id="uploadButton">Upload Photo</button>
+    <div id="photoGallery"></div>
+    
+<div id="lightbox" class="lightbox">
+    <span id="lightboxClose" class="lightbox-close">&times;</span>
+    <img id="lightboxImage" class="lightbox-image">
+    <div id="lightboxCaption" class="lightbox-caption"></div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
