@@ -56,8 +56,14 @@ Toronto.txt: 3
 Windsor.txt: 3
 data/Ontario overall: 3
 ---------------------
+Chibougamau.txt: 3
 Quebec City.txt: 3
-data/Quebec overall: 3
+Rene-Levasseur Island.txt: 3
+Saguenay.txt: 3
+Sept-iles.txt: 3
+Tasiujaq.txt: 5
+Umiujaq.txt: 5
+data/Quebec overall: 5
 ---------------------
 Humboldt.txt: 3
 Meadow Lake.txt: 3
