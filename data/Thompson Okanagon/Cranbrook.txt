@@ -1,0 +1,5 @@
+        Temperature: 22.5 °C
+        Sea Level Pressure: 102.2 kPa / falling
+        Wind: WSW 8 km/h
+        Dew Point: 4.6 °C
+        Relative Humidity: 31%
