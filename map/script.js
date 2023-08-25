@@ -26,7 +26,8 @@ var conservationLocations = [
     [-57.733333, 49.683333, 'Gros Morn National Park', 'Location: Newfoundland and Labrador<br>A World Heritage Site due to its exposed mantle and crust as an example of plate tectonics, the park also includes Western Brook Pond, Lobster Cove, and Gros Morne mountain in the Long Range Mountains chain.', 'https://en.wikipedia.org/wiki/Gros_Morne_National_Park'],
     [-123.45, 48.85, 'Gulf Islands National Park Reserve', 'Location: British Columbia<br>Representative of the Strait of Georgia Lowlands, the park includes 6 km2 of marine environment and land on 15 islands.', 'https://en.wikipedia.org/wiki/Gulf_Islands_National_Park_Reserve'],
     [-131.466667, 52.383333, 'Gwaii Haanas National Park Reserve', 'Location: British Columbia<br>Forming the southern end of the Haida Gwaii archipelago, the park is on the far western end of Canada and includes 138 islands, inclusive of Ninstints World Heritage Site, Hotspring Island, and the southern tip of Moresby Island.', 'https://en.wikipedia.org/wiki/Gwaii_Haanas_National_Park_Reserve_and_Haida_Heritage_Site'],
-    
+    [-100.036111, 50.863889, 'Riding Mountain National Park', 'Location: Manitoba<br>Part of the Riding Mountain Biosphere Reserve,[43] the park features both boreal and aspen forests among the larger grassland prairie landscape, interspersed with pothole lakes and marshes. The park has an outdoor recreation focus and includes the community of Wasagaming, the East Gate National Historic Site, and formerly the Whitewater prisoners-of-war camp.', 'https://en.wikipedia.org/wiki/Riding_Mountain_National_Park']
+
 ];
 
 // Add markers to the map
@@ -36,5 +37,22 @@ conservationLocations.forEach(function(location) {
         .setPopup(new mapboxgl.Popup().setHTML(
             '<b><a href="' + location[4] + '" target="_blank">' + location[2] + '</a></b><br>' + location[3]
         ))
+        .addTo(map);
+});
+
+var cityLocations = [
+    [-117.6593, 49.3237, 'BC Rockies', 'The overall forestfire index here is 5, there is a moderate forest fire risk.<br>Castlegar: 3<br>Creston: 5<br>Kootenay: 5<br>Nakusp: 1<br>Nelson: 3<br>Sparwood: 3<br>Trail: 5<br>Yoho: 5', 'orange'],
+    [-124.2028, 57.9651, 'Northern BC', 'The overall forestfire index here is 3, there is a low forest fire risk.<br>PortHardy: 3<br>Puntzi Mountain: 3<br>Tetsa River: 3', 'yellow'],
+    [-125.4494, 49.6506, 'The Islands', 'The overall forestfire index here is 5, there is a moderate forest fire risk.<br>EstevanPoint: 5', 'orange'],
+    [-120.5000, 50.2500, 'Thompson Okanagon', 'The overall forestfire index here is 7, there is a high  forest fire risk.<br>Cranbrook: 3<br>GrandForks: 5<br>Lillooet: 5<br>Penticton: 7<br>Princeton: 5<br>Summerland: 3', 'red'],
+    [-123.1207, 49.2827, 'Vancouver Coast & Mountains', 'The overall forestfire index here is 3, there is a low forest fire risk.<br>Pemberton: 3', 'yellow'],
+
+];
+
+// Add markers to the map with custom colors
+cityLocations.forEach(function(location) {
+    var marker = new mapboxgl.Marker({ color: location[4] })
+        .setLngLat([location[0], location[1]])
+        .setPopup(new mapboxgl.Popup().setHTML('<b>' + location[2] + '</b><br>' + location[3]))
         .addTo(map);
 });
