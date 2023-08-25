@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carbon Footprint Calculator</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, #c8e6c9, #f0f5f5);
+  }
+  h1 {
+    text-align: center;
+    color: #00695c;
+  }
+  #calculator {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #00695c;
+  }
+  input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    background-color: #00695c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+  }
+  button:hover {
+    background-color: #004d40;
+  }
+  #result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #00695c;
+  }
+</style>
+</head>
+<body>
+  <h1>Carbon Footprint Calculator</h1>
+  <div id="calculator">
+    <label for="car_dist">How many km did you drive today?</label>
+    <input type="number" id="car_dist" placeholder="Enter distance (km)">
+    
+    <label for="electricity_usage">Time in artificial light today:</label>
+    <input type="number" id="electricity_usage" placeholder="Enter hours">
+
+    <label for="electronic_usage">Time on electronic device today:</label>
+    <input type="number" id="electronic_usage" placeholder="Enter hours">
+    
+    <label for="meat_consumption">Servings of meat today:</label>
+    <input type="number" id="meat_consumption" placeholder="Enter servings">
+    
+    <button onclick="calculateCarbonFootprint()">Calculate</button>
+    
+    <div id="result"></div>
+    <div id="message"></div>
+  </div>
+  
+  <script>
+    function calculateCarbonFootprint() {
+      const carDist = parseFloat(document.getElementById("car_dist").value);
+      const electricityUsage = parseFloat(document.getElementById("electricity_usage").value);
+      const electronicUsage = parseFloat(document.getElementById("electronic_usage").value);
+      const meatConsumption = parseFloat(document.getElementById("meat_consumption").value);
+      
+      // Conversion factors (example values, not accurate)
+      const carEmissionFactor = 0.23; // kg CO2 per km
+      const deviceEmissionFactor = 0.23; // kg CO2 per hr
+      const electricityEmissionFactor = 0.5; // kg CO2 per hr
+      const meatEmissionFactor = 6; // kg CO2 per serving
+      
+      const carEmissions = carDist * carEmissionFactor;
+      const deviceEmissions = electronicUsage * deviceEmissionFactor;
+      const electricityEmissions = electricityUsage * electricityEmissionFactor;
+      const meatEmissions = meatConsumption * meatEmissionFactor;
+      
+      const totalEmissions = carEmissions + electricityEmissions + deviceEmissions + meatEmissions;
+      
+      const resultElement = document.getElementById("result");
+      resultElement.innerHTML = `Your estimated total carbon emissions: ${totalEmissions.toFixed(2)} kg CO2`;
+      
+      const messageElement = document.getElementById("message");
+      if (totalEmissions > 13) {
+        messageElement.innerHTML = "You are above the global average! Cut down on emissions to save the planet.";
+        messageElement.style.color = "#d32f2f"; // Red color
+      } else if (totalEmissions >= 11 && totalEmissions <= 13) {
+        messageElement.innerHTML = "You are at the global average! You can go lower and make a difference!";
+        messageElement.style.color = "#388e3c"; // Green color
+      } else if (totalEmissions < 11) {
+        messageElement.innerHTML = "Congratulations, you are below the global carbon emission average today! Keep doing what you're doing!!";
+        messageElement.style.color = "#1976d2"; // Blue color
+      } else {
+        messageElement.innerHTML = "";
+      }
+    }
+  </script>
+</body>
+</html>
