@@ -2,16 +2,18 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: linear-gradient(to bottom, #aeeea4, #8ccf7d); /* Light green gradient background */
+    background: black; /* Light green gradient background */
     display: flex;
     flex-direction: column; /* Stack elements vertically */
 }
 
 .page-title {
-    background-color: #77b300; /* Darker green for title background */
+    background: linear-gradient(110.1deg, rgb(34, 126, 34) 2.9%, rgb(168, 251, 60) 90.3%);
+ /* Darker green for title background */
     color: white;
     text-align: center;
     padding: 1rem 0;
+    font-size: 19px;
 }
 
 .split-container {
